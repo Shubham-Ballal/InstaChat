@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Post.PostActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newpost_backbtn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/back_btn_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:layout_marginStart="40dp"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+    </Toolbar>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ImageView
+        android:id="@+id/newpost_imgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/newpostSelectBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="Select Post"
+        style="@style/Widget.Material3.Button.OutlinedButton"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <EditText
+        android:id="@+id/newpost_caption"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Write a Caption"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:elevation="5dp"
+        android:background="@drawable/bg_edit_text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/newpost_cancelBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Cancel"
+            android:backgroundTint="@color/red"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/newpost_postBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Post"
+            android:backgroundTint="@color/blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

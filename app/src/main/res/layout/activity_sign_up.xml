@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_edit_text"/>
+    <EditText
+        android:id="@+id/signup_emailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Id"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_edit_text"/>
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_edit_text"/>
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S I G N   U P"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/blue"/>
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Have a Account? Log In"/>
+
+</LinearLayout>

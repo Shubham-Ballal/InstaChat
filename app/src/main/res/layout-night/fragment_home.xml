@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:src="@drawable/text_instagram"
+                app:tint="#808080" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/white"
+                    android:src="@drawable/notification2_icon"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/white"
+                    android:src="@drawable/chat2_icon"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MainStoryRv"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MainPostRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
